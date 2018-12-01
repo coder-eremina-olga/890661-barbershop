@@ -15,6 +15,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-navigator {
+  background-color: #000000;
+}
+
 .inner-page {
   color: #000000;
 
