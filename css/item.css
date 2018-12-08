@@ -92,6 +92,12 @@ a {
   color: #b7b4b2;
 }
 
+.product-photos {
+  width: 460px;
+
+  /* Временно для сетки */
+  min-height: 677px;
+}
 .product-photo-preview {
   list-style: none;
 }
@@ -123,6 +129,13 @@ a {
 
 .product-info ul {
   list-style: none;
+}
+
+.product-info {
+  width: 390px;
+
+  /* Временно для сетки */
+  min-height: 667px;
 }
 
 .main-footer {
@@ -195,6 +208,4 @@ a {
 .login-checkbox:focus {
   color: #663d15;
 }
-
-
 

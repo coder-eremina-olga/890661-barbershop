@@ -13,15 +13,97 @@ body {
   background-repeat: no-repeat;
 }
 
-.main-navigator {
+.main-header {
+  margin-bottom: 75px;
+
+  /* Временно для сетки */
+  min-height: 285px;
+  outline: 1px solid red;
+}
+
+.inner-page .main-header {
+  margin-bottom: 50px;
+  background-color: #000000;
+  /* Временно для сетки */
+  min-height: 70px;
+  background-color: transparent;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: transparent;
+
+  /* Временно для сетки */
+  min-height: 285px;
+  outline: 1px solid red;
+}
+
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
+
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+.main-header-logo {
+  order: 2;
+
+  width: 368px;
+  height: 153px;
+  outline: 1px solid red;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+  outline: 1px solid red;
+}
+
+
+.inner-page {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+
+  /* Временно для сетки */
+  background-image: url('img/barbershop-shop.jpg');
+  background-size: 1200px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+.main-navigation {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 
   background-color: #000000;
+  outline: 1px solid red;
 }
 
-.main-navigator a {
+
+.main-navigation a {
   color: #ffffff;
 }
 
@@ -47,27 +129,37 @@ a {
   background-color: #663d15;
 }
 
-.site-navigator,
+.site-navigation,
 .user-navigation {
   list-style: none;
+  color: #ffffff;
+  outline: 1px solid red;
 }
 
-.iner-page {
-  color: #000000;
 
-  background-color: #faf7f4;
-  background-image: url("img/Layer\ for\ catalog.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-}
 
 .page-title {
   font-size: 30px;
   line-height: 42px;
+
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 42px;
+  outline: 1px solid red;
 }
 
 .breadcrumbs a{
   color: #000000;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+
+  /* Временно для сетки */
+  min-height: 24px;
+  outline: 1px solid red;
 
 }
 
@@ -78,6 +170,14 @@ a {
 
 .breadcrumbs-current {
   color: #b7b4b2;
+}
+
+.filters {
+  width: 180px;
+
+  /* Временно для сетки */
+  min-height: 687px;
+  outline: 1px solid red;
 }
 
 .filters fieldset {
@@ -104,14 +204,46 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+
+  /* Временно для сетки */
+  min-height: 687px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  margin-bottom: 25px;
+
+
 }
 
 .catalog-item {
   background-color: #f8f8f8;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  /* Временно для сетки */
+  min-height: 285px;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px purple;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -147,6 +279,14 @@ a {
 
 .pagination-list {
 list-style: none;
+padding: 0;
+margin: 0;
+
+
+
+
+  /* Временно для сетки */
+  min-height: 47px;
 }
 
 .pagination-item a {
@@ -182,6 +322,10 @@ list-style: none;
   background-image: url("img/footer.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
 }
 
 .footer-contacts a {
